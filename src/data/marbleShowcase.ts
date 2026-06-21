@@ -62,7 +62,7 @@ export const marbleShowcase: MarbleShowcaseItem[] = [
     slug: "green-marble",
     name: "Green Marble",
     marbleImage: `/marbles/green-marble.jpg${V}`,
-    background: `/backgrounds/hotel-green.jpg${V}`,
+    background: `/backgrounds/hotel-green.png${V}`,
     subtitle: "Forest Veined Stone",
     description:
       "Distinctive green malachite marble with organic veining. Perfect for spa retreats and boutique hotel bars.",
