@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-luxury-black text-luxury-cream antialiased;
+  }
+
+  ::selection {
+    @apply bg-luxury-gold/30 text-luxury-white;
+  }
+}
+
+@layer components {
+  .luxury-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(201, 169, 98, 0.1) 0%,
+      transparent 50%,
+      rgba(201, 169, 98, 0.05) 100%
+    );
+  }
+
+  .gold-text {
+    @apply bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold bg-clip-text text-transparent;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-none border border-luxury-gold bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-luxury-gold transition-all duration-500 hover:bg-luxury-gold hover:text-luxury-black;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-none border border-white/20 bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-luxury-cream transition-all duration-500 hover:border-luxury-gold hover:text-luxury-gold;
+  }
+
+  .section-padding {
+    @apply px-6 py-24 md:px-12 lg:px-24 lg:py-32;
+  }
+
+  .heading-display {
+    @apply font-display text-4xl font-light leading-tight tracking-tight md:text-6xl lg:text-7xl;
+  }
+
+  .heading-section {
+    @apply font-display text-3xl font-light md:text-5xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Center marble slab — continuous float + gentle Y tilt (GPU, scroll-independent) */
+@keyframes marbleFloat {
+  0% {
+    transform: translateY(0) rotateY(-10deg) rotateX(4deg);
+  }
+  50% {
+    transform: translateY(-14px) rotateY(10deg) rotateX(2deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(-10deg) rotateX(4deg);
+  }
+}
+
+.marble-float {
+  animation: marbleFloat 7s ease-in-out infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marble-float {
+    animation: none;
+  }
+}
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a962;
+  border-radius: 3px;
+}
+
+/* Native scroll-snap showroom — fast, no JS lag */
+.showroom-snap {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.showroom-snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@keyframes marbleFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+.animate-marble-float {
+  animation: marbleFloat 5s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(120%); opacity: 0.3; }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

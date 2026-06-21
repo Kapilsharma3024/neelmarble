@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "White Onyx",
+    "slug": "white-onyx-marble",
+    "marbleImage": "/marbles/white-onyx.jpg",
+    "background": "/backgrounds/hotel-white.jpg",
+    "description": "Luxury translucent white marble shown as full-wall cladding in a premium marble bathroom.",
+    "applications": ["Flooring", "Wall Cladding", "Countertops", "Back-lit Panels"]
+  },
+  {
+    "id": "2",
+    "name": "Calacatta Gold",
+    "slug": "calacatta-gold-marble",
+    "marbleImage": "/marbles/calacatta-gold.jpg",
+    "background": "/backgrounds/hotel-gold.jpg",
+    "description": "White marble with golden veining, installed as a gold-trimmed marble bathroom.",
+    "applications": ["Wall Cladding", "Vanities", "Feature Walls", "Flooring"]
+  },
+  {
+    "id": "3",
+    "name": "Black Marble",
+    "slug": "black-marble",
+    "marbleImage": "/marbles/black-marble.jpg",
+    "background": "/backgrounds/hotel-black.jpg",
+    "description": "Premium black marble used across a dramatic dark marble bathroom and spa interior.",
+    "applications": ["Flooring", "Wall Cladding", "Bathroom Walls", "Elevator Cladding"]
+  },
+  {
+    "id": "4",
+    "name": "Pietra Beige",
+    "slug": "pietra-beige-marble",
+    "marbleImage": "/marbles/pietra-beige.jpg",
+    "background": "/backgrounds/hotel-beige.jpg",
+    "description": "Warm beige-grey marble shown as a full marble feature column in a luxury bedroom suite.",
+    "applications": ["Flooring", "Feature Columns", "Staircase", "Wall Cladding"]
+  },
+  {
+    "id": "5",
+    "name": "Green Marble",
+    "slug": "green-marble",
+    "marbleImage": "/marbles/green-marble.jpg",
+    "background": "/backgrounds/hotel-green.jpg",
+    "description": "Distinctive green marble with organic forest veining for spa and wellness interiors.",
+    "applications": ["Bathroom Walls", "Spa Cladding", "Interior Panels", "Flooring"]
+  },
+  {
+    "id": "6",
+    "name": "Statuario White",
+    "slug": "statuario-white-marble",
+    "marbleImage": "/marbles/statuario.jpg",
+    "background": "/backgrounds/hotel-statuario.jpg",
+    "description": "Bright white marble with fine grey veining, featured as a marble fireplace wall.",
+    "applications": ["Flooring", "Fireplace", "Wall Cladding", "Columns"]
+  }
+]
