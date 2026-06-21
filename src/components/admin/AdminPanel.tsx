@@ -153,9 +153,9 @@ export default function AdminPanel() {
 
   return (
     <div className="min-h-screen bg-luxury-black">
-      <div className="border-b border-white/10 bg-luxury-charcoal px-6 py-4">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <h1 className="font-display text-2xl text-luxury-cream">
+      <div className="border-b border-white/10 bg-luxury-charcoal px-4 py-3 sm:px-6 sm:py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
+          <h1 className="font-display text-xl text-luxury-cream sm:text-2xl">
             NeelMarble <span className="text-luxury-gold">Admin</span>
           </h1>
           <button
@@ -167,7 +167,7 @@ export default function AdminPanel() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-7xl gap-8 px-6 py-8">
+      <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 sm:flex-row sm:gap-8 sm:px-6 sm:py-8">
         <nav className="hidden w-48 shrink-0 space-y-2 md:block">
           {tabs.map((t) => (
             <button
@@ -182,13 +182,13 @@ export default function AdminPanel() {
           ))}
         </nav>
 
-        <div className="flex-1">
-          <div className="mb-6 flex gap-2 md:hidden">
+        <div className="flex-1 min-w-0">
+          <div className="mb-6 flex gap-1 overflow-x-auto pb-1 scrollbar-hide md:hidden">
             {tabs.map((t) => (
               <button
                 key={t.id}
                 onClick={() => setTab(t.id)}
-                className={`px-3 py-2 text-xs uppercase ${tab === t.id ? "text-luxury-gold" : "text-luxury-cream/60"}`}
+                className={`shrink-0 px-3 py-2 text-[10px] uppercase sm:text-xs ${tab === t.id ? "text-luxury-gold" : "text-luxury-cream/60"}`}
               >
                 {t.label}
               </button>
@@ -225,8 +225,8 @@ export default function AdminPanel() {
               </div>
               <div className="space-y-3">
                 {products.map((p) => (
-                  <div key={p.id} className="flex items-center justify-between glass-panel p-4">
-                    <div>
+                  <div key={p.id} className="flex flex-col gap-3 glass-panel p-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="min-w-0">
                       <p className="text-luxury-cream">{p.name}</p>
                       <p className="text-xs text-luxury-cream/40">{p.category} · {p.subcategory}</p>
                     </div>
@@ -242,9 +242,9 @@ export default function AdminPanel() {
           {tab === "inquiries" && (
             <div className="space-y-3">
               {inquiries.map((inq) => (
-                <div key={inq.id} className="glass-panel p-4">
-                  <div className="flex items-start justify-between">
-                    <div>
+                  <div key={inq.id} className="glass-panel p-4">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                    <div className="min-w-0">
                       <p className="font-medium text-luxury-cream">{inq.fullName}</p>
                       <p className="text-xs text-luxury-cream/40">{inq.email} · {inq.phone}</p>
                       <p className="mt-2 text-sm text-luxury-cream/60">{inq.message}</p>

@@ -9,7 +9,7 @@ export const metadata = createMetadata(
 
 export default function QuotePage() {
   return (
-    <div className="min-h-screen bg-luxury-black pt-32">
+    <div className="min-h-screen bg-luxury-black page-header-offset">
       <div className="section-padding mx-auto max-w-3xl">
         <div className="mb-12 text-center">
           <p className="mb-4 text-xs uppercase tracking-[0.5em] text-luxury-gold">Custom Quote</p>

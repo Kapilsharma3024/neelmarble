@@ -15,13 +15,13 @@ gsap.registerPlugin(ScrollTrigger);
 function CollectionNav() {
   const { activeIndex, scrollToSection } = useMarbleScroll();
   return (
-    <div className="absolute bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-black/60 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center overflow-x-auto px-2 py-3 scrollbar-hide">
+    <div className="absolute bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-black/60 backdrop-blur-xl pb-[env(safe-area-inset-bottom)]">
+      <div className="mx-auto flex max-w-7xl items-center overflow-x-auto px-2 py-2.5 scrollbar-hide sm:py-3">
         {marbleShowcase.map((m, i) => (
           <button
             key={m.id}
             onClick={() => scrollToSection(i)}
-            className={`shrink-0 px-3 py-2 text-[9px] uppercase tracking-[0.12em] transition-colors md:text-[10px] ${
+            className={`shrink-0 px-2.5 py-1.5 text-[8px] uppercase tracking-[0.1em] transition-colors sm:px-3 sm:text-[9px] md:text-[10px] md:tracking-[0.12em] ${
               activeIndex === i ? "text-luxury-gold" : "text-white/35 hover:text-white/60"
             }`}
           >
@@ -97,15 +97,15 @@ function ScrollController() {
 
   return (
     <div ref={containerRef}>
-      <div ref={pinRef} className="relative h-screen w-full overflow-hidden">
+      <div ref={pinRef} className="relative h-[100dvh] min-h-[520px] w-full overflow-hidden">
         {/* Background — luxury interior using the SAME marble */}
         <BackgroundLayer />
 
-        <div className="pointer-events-none absolute left-1/2 top-8 z-30 -translate-x-1/2">
-          <p className="text-[10px] uppercase tracking-[0.7em] text-luxury-cream/30">Scroll</p>
+        <div className="pointer-events-none absolute left-1/2 top-4 z-30 -translate-x-1/2 sm:top-8">
+          <p className="text-[9px] uppercase tracking-[0.5em] text-luxury-cream/30 sm:text-[10px] sm:tracking-[0.7em]">Scroll</p>
         </div>
 
-        <div className="relative z-10 flex h-full flex-col lg:flex-row">
+        <div className="relative z-10 grid h-full min-h-0 grid-rows-[auto_minmax(0,1fr)] lg:flex lg:flex-row">
           {/* LEFT — title, description, applications, CTA */}
           <MarbleInfoPanel />
 

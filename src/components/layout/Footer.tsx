@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-6 text-center sm:mt-16 sm:flex-row sm:pt-8 sm:text-left">
           <p className="text-xs text-luxury-cream/40">
             © {new Date().getFullYear()} NeelMarble. All rights reserved.
           </p>

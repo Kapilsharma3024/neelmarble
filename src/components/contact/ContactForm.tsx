@@ -58,7 +58,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
     "w-full border border-white/10 bg-luxury-black/50 px-4 py-3 text-sm text-luxury-cream placeholder:text-luxury-cream/30 focus:border-luxury-gold focus:outline-none transition-colors";
 
   return (
-    <div className={variant === "contact" ? "glass-panel p-8 md:p-12" : ""}>
+    <div className={variant === "contact" ? "glass-panel p-5 sm:p-8 md:p-12" : ""}>
       <AnimatePresence mode="wait">
         {success ? (
           <motion.div

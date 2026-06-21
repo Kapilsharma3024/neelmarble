@@ -33,35 +33,35 @@ function CollectionsContent() {
   }, [search, category, application]);
 
   return (
-    <div className="min-h-screen bg-luxury-black pt-28">
-      <div className="section-padding mx-auto max-w-7xl pb-32">
-        <div className="mb-12">
-          <p className="mb-3 text-[10px] uppercase tracking-[0.5em] text-luxury-gold">
+    <div className="min-h-screen bg-luxury-black pt-24 sm:pt-28">
+      <div className="section-padding mx-auto max-w-7xl pb-24 sm:pb-32">
+        <div className="mb-8 sm:mb-12">
+          <p className="mb-2 text-[10px] uppercase tracking-[0.4em] text-luxury-gold sm:mb-3 sm:tracking-[0.5em]">
             {marbleSections.length} Collections
           </p>
           <h1 className="heading-display text-luxury-cream">
             Indian <span className="gold-text">Marble</span>
           </h1>
-          <p className="mt-4 max-w-xl text-sm text-luxury-cream/50">
-            Hover any slab to see installed result — inspired by premium stone galleries
+          <p className="mt-3 max-w-xl text-xs text-luxury-cream/50 sm:mt-4 sm:text-sm">
+            Tap any slab to preview installed result — hover on desktop
           </p>
         </div>
 
-        <div className="mb-10 space-y-4">
+        <div className="mb-8 space-y-3 sm:mb-10 sm:space-y-4">
           <div className="relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-luxury-cream/40" size={18} />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-luxury-cream/40 sm:left-4" size={18} />
             <input
               type="text"
               placeholder="Search 20+ marbles..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full border border-white/10 bg-luxury-charcoal py-4 pl-12 pr-4 text-sm text-luxury-cream focus:border-luxury-gold focus:outline-none"
+              className="w-full border border-white/10 bg-luxury-charcoal py-3 pl-10 pr-4 text-sm text-luxury-cream focus:border-luxury-gold focus:outline-none sm:py-4 sm:pl-12"
             />
           </div>
           <select
             value={application}
             onChange={(e) => setApplication(e.target.value)}
-            className="border border-white/10 bg-luxury-charcoal px-4 py-2 text-xs uppercase text-luxury-cream"
+            className="w-full border border-white/10 bg-luxury-charcoal px-4 py-2.5 text-xs uppercase text-luxury-cream sm:w-auto sm:py-2"
           >
             <option value="">All Applications</option>
             {applications.map((a) => (
@@ -70,7 +70,7 @@ function CollectionsContent() {
           </select>
         </div>
 
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-2 gap-3 min-[480px]:gap-4 md:grid-cols-3 md:gap-5 lg:grid-cols-4 lg:gap-8">
           {filtered.map((product) => {
             const section = marbleSections.find((s) => s.id === product.id);
             if (!section) return null;

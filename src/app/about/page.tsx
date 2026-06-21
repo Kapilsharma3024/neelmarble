@@ -10,7 +10,7 @@ export const metadata = createMetadata(
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-luxury-black">
-      <section className="flex min-h-[60vh] items-center pt-32 section-padding">
+      <section className="flex min-h-[50vh] items-center page-header-offset section-padding sm:min-h-[60vh]">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs uppercase tracking-[0.5em] text-luxury-gold">Our Story</p>
           <h1 className="heading-display max-w-3xl text-luxury-cream">

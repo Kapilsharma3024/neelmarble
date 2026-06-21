@@ -35,14 +35,14 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[100] flex items-center justify-center bg-luxury-black/90 p-4 backdrop-blur-sm"
+        className="fixed inset-0 z-[100] flex items-end justify-center bg-luxury-black/90 p-0 backdrop-blur-sm sm:items-center sm:p-4"
         onClick={onClose}
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative max-h-[90vh] w-full max-w-5xl overflow-y-auto bg-luxury-charcoal border border-white/10"
+          className="relative max-h-[92dvh] w-full max-w-5xl overflow-y-auto border border-white/10 bg-luxury-charcoal sm:max-h-[90vh]"
           onClick={(e) => e.stopPropagation()}
         >
           <button
@@ -95,22 +95,22 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               )}
             </div>
 
-            <div className="p-8 lg:p-12">
+            <div className="p-5 sm:p-8 lg:p-12">
               <p className="mb-2 text-xs uppercase tracking-[0.3em] text-luxury-gold">{product.subcategory}</p>
-              <h2 className="heading-section mb-4 text-luxury-cream">{product.name}</h2>
-              <p className="mb-8 text-sm leading-relaxed text-luxury-cream/60">{product.description}</p>
+              <h2 className="heading-section mb-3 text-luxury-cream sm:mb-4">{product.name}</h2>
+              <p className="mb-6 text-sm leading-relaxed text-luxury-cream/60 sm:mb-8">{product.description}</p>
 
-              <div className="mb-8 space-y-4">
-                <div className="flex items-center gap-3 text-sm text-luxury-cream/70">
-                  <Ruler size={16} className="text-luxury-gold" />
+              <div className="mb-6 space-y-3 sm:mb-8 sm:space-y-4">
+                <div className="flex items-start gap-3 text-sm text-luxury-cream/70">
+                  <Ruler size={16} className="mt-0.5 shrink-0 text-luxury-gold" />
                   <span>Dimensions: {product.dimensions}</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-luxury-cream/70">
-                  <Layers size={16} className="text-luxury-gold" />
+                  <Layers size={16} className="shrink-0 text-luxury-gold" />
                   <span>Finish: {product.finish}</span>
                 </div>
                 <div className="flex items-start gap-3 text-sm text-luxury-cream/70">
-                  <MapPin size={16} className="mt-0.5 text-luxury-gold" />
+                  <MapPin size={16} className="mt-0.5 shrink-0 text-luxury-gold" />
                   <span>Application: {product.application.join(", ")}</span>
                 </div>
               </div>

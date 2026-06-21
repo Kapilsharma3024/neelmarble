@@ -54,7 +54,7 @@ export function StatisticsSection() {
   return (
     <section className="section-padding bg-luxury-black">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 sm:gap-8 lg:grid-cols-4">
           {statistics.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -64,8 +64,8 @@ export function StatisticsSection() {
               transition={{ delay: i * 0.1 }}
               className="text-center"
             >
-              <span className="font-display text-5xl text-luxury-gold md:text-6xl">{stat.value}</span>
-              <p className="mt-2 text-xs uppercase tracking-[0.3em] text-luxury-cream/60">{stat.label}</p>
+              <span className="font-display text-3xl text-luxury-gold sm:text-5xl md:text-6xl">{stat.value}</span>
+              <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-luxury-cream/60 sm:mt-2 sm:text-xs sm:tracking-[0.3em]">{stat.label}</p>
             </motion.div>
           ))}
         </div>
@@ -162,9 +162,9 @@ export function WhyChooseUs() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass-panel p-12 text-center"
+            className="glass-panel p-6 text-center sm:p-12"
           >
-            <p className="font-display text-6xl text-luxury-gold">25+</p>
+            <p className="font-display text-4xl text-luxury-gold sm:text-6xl">25+</p>
             <p className="mt-2 text-sm uppercase tracking-[0.3em] text-luxury-cream/60">Years of Trust</p>
             <p className="mt-8 text-sm leading-relaxed text-luxury-cream/50">
               Trusted by architects, interior designers, and homeowners across 25+ countries

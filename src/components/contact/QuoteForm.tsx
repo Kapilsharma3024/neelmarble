@@ -68,7 +68,7 @@ export default function QuoteForm() {
           </p>
         </motion.div>
       ) : (
-        <motion.form onSubmit={handleSubmit} className="glass-panel space-y-6 p-8 md:p-12">
+        <motion.form onSubmit={handleSubmit} className="glass-panel space-y-5 p-5 sm:space-y-6 sm:p-8 md:p-12">
           {errors.form && <p className="text-sm text-red-400">{errors.form}</p>}
 
           <div className="grid gap-6 md:grid-cols-2">

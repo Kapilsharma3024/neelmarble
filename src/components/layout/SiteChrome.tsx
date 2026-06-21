@@ -12,7 +12,7 @@ export default function SiteChrome({ children }: { children: React.ReactNode }) 
   return (
     <>
       {!isAdmin && <Navbar />}
-      <main>{children}</main>
+      <main className="min-w-0 overflow-x-hidden">{children}</main>
       {!isAdmin && <Footer />}
       {!isAdmin && <WhatsAppButton />}
     </>

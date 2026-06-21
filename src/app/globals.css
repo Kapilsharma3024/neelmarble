@@ -5,10 +5,13 @@
 @layer base {
   html {
     scroll-behavior: auto;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-luxury-black text-luxury-cream antialiased;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
   }
 
   ::selection {
@@ -35,23 +38,27 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-none border border-luxury-gold bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-luxury-gold transition-all duration-500 hover:bg-luxury-gold hover:text-luxury-black;
+    @apply inline-flex items-center justify-center gap-2 rounded-none border border-luxury-gold bg-transparent px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-luxury-gold transition-all duration-500 hover:bg-luxury-gold hover:text-luxury-black sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.2em];
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-none border border-white/20 bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-luxury-cream transition-all duration-500 hover:border-luxury-gold hover:text-luxury-gold;
+    @apply inline-flex items-center justify-center gap-2 rounded-none border border-white/20 bg-transparent px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-luxury-cream transition-all duration-500 hover:border-luxury-gold hover:text-luxury-gold sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.2em];
   }
 
   .section-padding {
-    @apply px-6 py-24 md:px-12 lg:px-24 lg:py-32;
+    @apply px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-24 lg:px-24 lg:py-32;
+  }
+
+  .page-header-offset {
+    @apply pt-24 sm:pt-28 md:pt-32;
   }
 
   .heading-display {
-    @apply font-display text-4xl font-light leading-tight tracking-tight md:text-6xl lg:text-7xl;
+    @apply font-display text-3xl font-light leading-tight tracking-tight sm:text-4xl md:text-6xl lg:text-7xl;
   }
 
   .heading-section {
-    @apply font-display text-3xl font-light md:text-5xl;
+    @apply font-display text-2xl font-light sm:text-3xl md:text-5xl;
   }
 }
 
@@ -86,6 +93,24 @@
   animation: marbleFloat 7s ease-in-out infinite;
   transform-style: preserve-3d;
   will-change: transform;
+}
+
+@media (max-width: 640px) {
+  .marble-float {
+    animation: marbleFloatMobile 7s ease-in-out infinite;
+  }
+
+  @keyframes marbleFloatMobile {
+    0% {
+      transform: translateY(0) rotateY(-4deg) rotateX(2deg);
+    }
+    50% {
+      transform: translateY(-8px) rotateY(4deg) rotateX(1deg);
+    }
+    100% {
+      transform: translateY(0) rotateY(-4deg) rotateX(2deg);
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

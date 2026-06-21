@@ -11,7 +11,7 @@ export const metadata = createMetadata(
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-luxury-black">
-      <section className="flex min-h-[40vh] items-center pt-32 section-padding">
+      <section className="flex min-h-[35vh] items-center page-header-offset section-padding sm:min-h-[40vh]">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs uppercase tracking-[0.5em] text-luxury-gold">Get In Touch</p>
           <h1 className="heading-display text-luxury-cream">

@@ -41,13 +41,13 @@ export default function Navbar() {
           : "bg-transparent"
       )}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-12">
-       <Link href="/" className="group flex items-center gap-3" > <Image src="/logo/neelmarble.png" alt="Neel Marble Logo" width={56} height={56} priority className="h-[56px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" /> 
-       <div className="flex flex-col justify-center leading-none">
-          <span className="font-display text-2xl font-light tracking-[0.3em] text-luxury-cream transition-colors group-hover:text-luxury-gold">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 sm:py-5 md:px-12 md:py-6">
+       <Link href="/" className="group flex min-w-0 items-center gap-2 sm:gap-3" > <Image src="/logo/neelmarble.png" alt="Neel Marble Logo" width={56} height={56} priority className="h-10 w-auto shrink-0 object-contain transition-transform duration-300 group-hover:scale-105 sm:h-12 md:h-[56px]" /> 
+       <div className="flex min-w-0 flex-col justify-center leading-none">
+          <span className="font-display text-lg font-light tracking-[0.2em] text-luxury-cream transition-colors group-hover:text-luxury-gold sm:text-xl sm:tracking-[0.25em] md:text-2xl md:tracking-[0.3em]">
             NEEL
           </span>
-          <span className="text-[10px] uppercase tracking-[0.5em] text-luxury-gold">
+          <span className="text-[8px] uppercase tracking-[0.35em] text-luxury-gold sm:text-[9px] sm:tracking-[0.45em] md:text-[10px] md:tracking-[0.5em]">
             Marble
           </span>
         </div>
@@ -97,7 +97,7 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="border-t border-white/5 bg-luxury-black/95 backdrop-blur-xl lg:hidden"
           >
-            <div className="flex flex-col gap-6 px-6 py-8">
+            <div className="flex flex-col gap-5 px-4 py-6 sm:gap-6 sm:px-6 sm:py-8">
               {navLinks.map((link, i) => (
                 <motion.div
                   key={link.href}
