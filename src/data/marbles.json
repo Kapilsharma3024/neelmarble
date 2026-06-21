@@ -31,7 +31,7 @@
     "name": "Pietra Beige",
     "slug": "pietra-beige-marble",
     "marbleImage": "/marbles/pietra-beige.jpg",
-    "background": "/backgrounds/hotel-beige.jpg",
+    "background": "/backgrounds/hotel-beige.png",
     "description": "Warm beige-grey marble shown as a full marble feature column in a luxury bedroom suite.",
     "applications": ["Flooring", "Feature Columns", "Staircase", "Wall Cladding"]
   },
@@ -40,7 +40,7 @@
     "name": "Green Marble",
     "slug": "green-marble",
     "marbleImage": "/marbles/green-marble.jpg",
-    "background": "/backgrounds/hotel-green.jpg",
+    "background": "/backgrounds/hotel-green.png",
     "description": "Distinctive green marble with organic forest veining for spa and wellness interiors.",
     "applications": ["Bathroom Walls", "Spa Cladding", "Interior Panels", "Flooring"]
   },

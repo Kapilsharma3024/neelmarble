@@ -38,9 +38,9 @@ const backgrounds = {
     "https://images.pexels.com/photos/6492398/pexels-photo-6492398.jpeg?auto=compress&cs=tinysrgb" + BG,
   "hotel-black.jpg":
     "https://images.pexels.com/photos/3315291/pexels-photo-3315291.jpeg?auto=compress&cs=tinysrgb" + BG,
-  "hotel-beige.jpg":
+  "hotel-beige.png":
     "https://images.pexels.com/photos/6585757/pexels-photo-6585757.jpeg?auto=compress&cs=tinysrgb" + BG,
-  "hotel-green.jpg":
+  "hotel-green.png":
     "https://images.pexels.com/photos/7045913/pexels-photo-7045913.jpeg?auto=compress&cs=tinysrgb" + BG,
   "hotel-statuario.jpg":
     "https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?auto=compress&cs=tinysrgb" + BG,
