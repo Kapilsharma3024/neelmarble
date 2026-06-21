@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 const siteConfig = {
-  name: "LuxMarble",
-  title: "LuxMarble — Premium Indian Marble Showroom",
+  name: "NeelMarble",
+  title: "NeelMarble — Premium Indian Marble Showroom",
   description:
     "Discover exquisite Indian marble collections for flooring, wall cladding, countertops, and luxury interiors. Premium natural stone from India's finest quarries.",
-  url: "https://luxmarble.com",
+  url: "https://NeelMarble.com",
   ogImage: "/textures/white-marble.jpg",
 };
 
@@ -55,7 +55,7 @@ export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "LuxMarble",
+    name: "NeelMarble",
     description: siteConfig.description,
     url: siteConfig.url,
     logo: `${siteConfig.url}/textures/white-marble.jpg`,
@@ -87,7 +87,7 @@ export function productSchema(product: {
     name: product.name,
     description: product.description,
     image: product.image,
-    brand: { "@type": "Brand", name: "LuxMarble" },
+    brand: { "@type": "Brand", name: "NeelMarble" },
     offers: {
       "@type": "Offer",
       availability: "https://schema.org/InStock",

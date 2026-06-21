@@ -90,7 +90,7 @@ export default function RevoltosaShowroom() {
           <div className="relative flex w-full flex-col justify-center px-6 pt-28 lg:w-[42%] lg:px-12 lg:pt-0">
             {activeIndex === 0 && (
               <div className="mb-6 lg:mb-0">
-                <p className="text-[10px] uppercase tracking-[0.5em] text-black/45">LuxMarble</p>
+                <p className="text-[10px] uppercase tracking-[0.5em] text-black/45">NeelMarble</p>
                 <h1 className="mt-2 font-display text-3xl font-light text-black/75 md:text-5xl">
                   Stone of the Extraordinary
                 </h1>

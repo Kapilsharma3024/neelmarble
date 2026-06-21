@@ -137,7 +137,7 @@ export function WhyChooseUs() {
           >
             <p className="mb-4 text-xs uppercase tracking-[0.5em] text-luxury-gold">Why Choose Us</p>
             <h2 className="heading-section mb-8 text-luxury-cream">
-              The LuxMarble
+              The NeelMarble
               <br />
               <span className="gold-text">Difference</span>
             </h2>

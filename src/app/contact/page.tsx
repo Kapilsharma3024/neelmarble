@@ -4,7 +4,7 @@ import { ContactInfo, GoogleMap } from "@/components/contact/ContactExtras";
 
 export const metadata = createMetadata(
   "Contact Us",
-  "Get in touch with LuxMarble for premium Indian marble inquiries. Visit our showroom in Kishangarh, Rajasthan.",
+  "Get in touch with NeelMarble for premium Indian marble inquiries. Visit our showroom in Kishangarh, Rajasthan.",
   "/contact"
 );
 

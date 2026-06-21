@@ -133,7 +133,7 @@ function ScrollSections() {
             </h1>
             <p className="max-w-md text-sm leading-relaxed text-luxury-cream/60">
               Discover the finest Indian marble collections. Crafted by nature,
-              perfected by LuxMarble.
+              perfected by NeelMarble.
             </p>
           </motion.div>
         </div>

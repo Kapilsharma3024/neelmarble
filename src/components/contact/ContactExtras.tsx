@@ -4,7 +4,7 @@ import { MessageCircle, Phone, Mail, MapPin } from "lucide-react";
 
 export default function WhatsAppButton() {
   const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "919876543210";
-  const message = encodeURIComponent("Hello LuxMarble, I'm interested in your marble collections.");
+  const message = encodeURIComponent("Hello NeelMarble, I'm interested in your marble collections.");
 
   return (
     <a
@@ -54,7 +54,7 @@ export function GoogleMap() {
   return (
     <div className="relative h-80 w-full overflow-hidden border border-white/10 bg-luxury-charcoal">
       <iframe
-        title="LuxMarble Office Location"
+        title="NeelMarble Office Location"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.5!2d74.85!3d26.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDM0JzQ4LjAiTiA3NMKwNTEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1"
         width="100%"
         height="100%"

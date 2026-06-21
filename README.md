@@ -1,4 +1,4 @@
-# LuxMarble — Premium 3D Marble Showroom
+# NeelMarble — Premium 3D Marble Showroom
 
 Ultra-luxury marble showroom website built with Next.js, React Three Fiber, GSAP, and Framer Motion.
 

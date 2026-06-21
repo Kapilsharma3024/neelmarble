@@ -27,7 +27,7 @@ function HeroIntro() {
       style={{ opacity }}
     >
       <div className="section-padding mx-auto max-w-7xl">
-        <p className="mb-4 text-[10px] uppercase tracking-[0.6em] text-luxury-gold">LuxMarble</p>
+        <p className="mb-4 text-[10px] uppercase tracking-[0.6em] text-luxury-gold">NeelMarble</p>
         <h1 className="font-display text-5xl font-light leading-[0.88] text-luxury-cream md:text-7xl xl:text-8xl">
           Crafted by
           <br />

@@ -156,7 +156,7 @@ export default function AdminPanel() {
       <div className="border-b border-white/10 bg-luxury-charcoal px-6 py-4">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <h1 className="font-display text-2xl text-luxury-cream">
-            LuxMarble <span className="text-luxury-gold">Admin</span>
+            NeelMarble <span className="text-luxury-gold">Admin</span>
           </h1>
           <button
             onClick={() => { sessionStorage.removeItem("admin_auth"); setAuthenticated(false); }}

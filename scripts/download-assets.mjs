@@ -47,7 +47,7 @@ const backgrounds = {
 };
 
 async function download(url, dest) {
-  const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 LuxMarble" } });
+  const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 NeelMarble" } });
   if (!res.ok) throw new Error(`${url} -> ${res.status}`);
   const buf = Buffer.from(await res.arrayBuffer());
   const type = res.headers.get("content-type") || "";

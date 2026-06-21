@@ -3,7 +3,7 @@ import AboutTimeline, { StatisticsSection, ProcessSection, WhyChooseUs } from "@
 
 export const metadata = createMetadata(
   "About Us",
-  "Learn about LuxMarble's 25+ year legacy in premium Indian marble. Our story, manufacturing process, and commitment to excellence.",
+  "Learn about NeelMarble's 25+ year legacy in premium Indian marble. Our story, manufacturing process, and commitment to excellence.",
   "/about"
 );
 
@@ -19,7 +19,7 @@ export default function AboutPage() {
             <span className="gold-text">Since 1998</span>
           </h1>
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-luxury-cream/60">
-            From the heart of Rajasthan&apos;s marble belt, LuxMarble has been sourcing and crafting
+            From the heart of Rajasthan&apos;s marble belt, NeelMarble has been sourcing and crafting
             the finest Indian marble for over two decades. What began as a small quarry operation
             has grown into a global brand trusted by architects and designers worldwide.
           </p>

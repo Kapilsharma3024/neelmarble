@@ -31,7 +31,7 @@ export default function FeaturesSection() {
           className="mb-16 text-center"
         >
           <p className="mb-4 text-xs uppercase tracking-[0.5em] text-luxury-gold">
-            Why LuxMarble
+            Why NeelMarble
           </p>
           <h2 className="heading-section gold-text">Uncompromising Quality</h2>
         </motion.div>
