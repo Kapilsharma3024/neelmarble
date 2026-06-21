@@ -51,7 +51,7 @@ export const marbleShowcase: MarbleShowcaseItem[] = [
     slug: "pietra-beige-marble",
     name: "Pietra Greige",
     marbleImage: `/marbles/pietra-beige.jpg${V}`,
-    background: `/backgrounds/hotel-beige.jpg${V}`,
+    background: `/backgrounds/hotel-beige.png${V}`,
     subtitle: "Warm Greige Stone",
     description:
       "Warm greige marble with natural veining. Featured as a full marble column in a luxury bedroom suite.",
