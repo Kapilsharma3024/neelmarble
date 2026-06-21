@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -41,13 +42,15 @@ export default function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-12">
-        <Link href="/" className="group flex flex-col">
+       <Link href="/" className="group flex items-center gap-3" > <Image src="/logo/neelmarble.png" alt="Neel Marble Logo" width={56} height={56} priority className="h-[56px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" /> 
+       <div className="flex flex-col justify-center leading-none">
           <span className="font-display text-2xl font-light tracking-[0.3em] text-luxury-cream transition-colors group-hover:text-luxury-gold">
             NEEL
           </span>
           <span className="text-[10px] uppercase tracking-[0.5em] text-luxury-gold">
             Marble
           </span>
+        </div>
         </Link>
 
         <div className="hidden items-center gap-10 lg:flex">

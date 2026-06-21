@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,13 +8,24 @@ export default function Footer() {
       <div className="section-padding mx-auto max-w-7xl">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="mb-6">
+            <div className="mb-6 flex items-center gap-4">
+
+            <Image
+              src="/logo/neelmarble.png"
+              alt="Neel Marble Logo"
+              width={72}
+              height={72}
+              className="h-[72px] w-auto shrink-0 object-contain"
+            />
+
+            <div className="flex flex-col justify-center leading-none">
               <span className="font-display text-3xl font-light tracking-[0.3em] text-luxury-cream">
                 NEEL
               </span>
               <span className="ml-2 text-xs uppercase tracking-[0.5em] text-luxury-gold">
                 Marble
               </span>
+              </div>
             </div>
             <p className="text-sm leading-relaxed text-luxury-cream/60">
               Premium Indian marble sourced from the finest quarries. Crafting
