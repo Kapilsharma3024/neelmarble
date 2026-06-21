@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="mb-6">
               <span className="font-display text-3xl font-light tracking-[0.3em] text-luxury-cream">
-                LUX
+                NEEL
               </span>
               <span className="ml-2 text-xs uppercase tracking-[0.5em] text-luxury-gold">
                 Marble
